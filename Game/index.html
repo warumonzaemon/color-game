@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Game</title>
+
+    <link rel="stylesheet" href="style/style.css">
+
+</head>
+<body>
+    <video autoplay muted loop id="myVideo">
+        <source src="assets/background.mp4" type="video/mp4">
+      </video>
+
+    <div id="diceContainer">
+        <div class="logo">
+            <h1 id="title">COLOR</h1>
+            <h1>GAME </h1>
+        </div>
+
+        <div id="color1" class="dice"></div>
+        <div id="color2"class="dice"></div>
+        <div id="color3"class="dice"></div>
+        <button id="roll">Roll</button>
+        <div id="hostUI">
+            <h2>Host Profit:</h2>
+            <span>Php</span>
+            <span id="hostProfit">0</span>
+            <span class="block" id="notif1"></span>
+            <span class="block" id="notif2"></span>
+            <span class="block" id="notif3"></span>
+            <span class="block" id="notif4"></span>
+            <span class="block" id="notif5"></span>
+            <span class="block" id="notif6"></span>
+            <span class="block" id="notif7"></span>
+            <span class="block" id="notif8"></span>
+            <span class="block" id="notif9"></span>
+            <span class="block" id="notif10"></span>
+        </div>
+    </div>
+
+
+    <div id="bettingSection">
+
+        <!-- Player 1 UI -->
+        <form class="playerForm" id="player1">
+            <div>
+                <label for="">Name: </label>
+                <input type="text" id="name1">  
+            </div>
+            <div>
+                <label for="">Profit: </label> Php
+                <span class="profit">0</span>  
+            </div>
+            <div class="flex">
+                <div class="color-yellow colorBet"></div>
+                <input type="number" class="textBet yellowBet" > 
+            </div>
+            <div class="flex">
+                <div class="color-white colorBet"></div>
+                <input type="text" class="textBet whiteBet"> 
+            </div>
+            <div class="flex">
+                <div class="color-pink colorBet"></div>
+                <input type="text" class="textBet pinkBet"> 
+            </div>
+            <div class="flex">
+                <div class="color-green colorBet"></div>
+                <input type="text" class="textBet greenBet"> 
+            </div>
+            <div class="flex">
+                <div class="color-red colorBet"></div>
+                <input type="text" class="textBet redBet"> 
+            </div>
+            <div class="flex">
+                <div class="color-blue colorBet"></div>
+                <input type="text" class="textBet blueBet"> 
+            </div>
+        </form>
+      
+        <!-- Player 2 UI -->
+        <form class="playerForm" id="player2">
+            <div>
+                <label for="">Name: </label>
+                <input type="text" id="name2">  
+            </div>
+            <div>
+                <label for="">Profit: </label> Php
+                <span class="profit">0</span>  
+            </div>
+            <div class="flex">
+                <div class="color-yellow colorBet"></div>
+                <input type="number" class="textBet yellowBet" > 
+            </div>
+            <div class="flex">
+                <div class="color-white colorBet"></div>
+                <input type="text" class="textBet whiteBet"> 
+            </div>
+            <div class="flex">
+                <div class="color-pink colorBet"></div>
+                <input type="text" class="textBet pinkBet"> 
+            </div>
+            <div class="flex">
+                <div class="color-green colorBet"></div>
+                <input type="text" class="textBet greenBet"> 
+            </div>
+            <div class="flex">
+                <div class="color-red colorBet"></div>
+                <input type="text" class="textBet redBet"> 
+            </div>
+            <div class="flex">
+                <div class="color-blue colorBet"></div>
+                <input type="text" class="textBet blueBet"> 
+            </div>
+        </form>
+
+        <!-- Player 3 UI -->
+        <form class="playerForm" id="player3">
+            <div>
+                <label for="">Name: </label>
+                <input type="text" id="name3">  
+            </div>
+            <div>
+                <label for="">Profit: </label> Php
+                <span class="profit">0</span>  
+            </div>
+            <div class="flex">
+                <div class="color-yellow colorBet"></div>
+                <input type="number" class="textBet yellowBet" > 
+            </div>
+            <div class="flex">
+                <div class="color-white colorBet"></div>
+                <input type="text" class="textBet whiteBet"> 
+            </div>
+            <div class="flex">
+                <div class="color-pink colorBet"></div>
+                <input type="text" class="textBet pinkBet"> 
+            </div>
+            <div class="flex">
+                <div class="color-green colorBet"></div>
+                <input type="text" class="textBet greenBet"> 
+            </div>
+            <div class="flex">
+                <div class="color-red colorBet"></div>
+                <input type="text" class="textBet redBet"> 
+            </div>
+            <div class="flex">
+                <div class="color-blue colorBet"></div>
+                <input type="text" class="textBet blueBet"> 
+            </div>
+        </form>
+
+        <!-- Player 4 UI -->
+        <form class="playerForm" id="player4">
+            <div>
+                <label for="">Name: </label>
+                <input type="text" id="name4">  
+            </div>
+            <div>
+                <label for="">Profit: </label> Php
+                <span class="profit">0</span>  
+            </div>
+            <div class="flex">
+                <div class="color-yellow colorBet"></div>
+                <input type="number" class="textBet yellowBet" > 
+            </div>
+            <div class="flex">
+                <div class="color-white colorBet"></div>
+                <input type="text" class="textBet whiteBet"> 
+            </div>
+            <div class="flex">
+                <div class="color-pink colorBet"></div>
+                <input type="text" class="textBet pinkBet"> 
+            </div>
+            <div class="flex">
+                <div class="color-green colorBet"></div>
+                <input type="text" class="textBet greenBet"> 
+            </div>
+            <div class="flex">
+                <div class="color-red colorBet"></div>
+                <input type="text" class="textBet redBet"> 
+            </div>
+            <div class="flex">
+                <div class="color-blue colorBet"></div>
+                <input type="text" class="textBet blueBet"> 
+            </div>
+        </form>
+
+        <!-- Player 5 UI -->
+        <form class="playerForm" id="player5">
+            <div>
+                <label for="">Name: </label>
+                <input type="text" id="name5">  
+            </div>
+            <div>
+                <label for="">Profit: </label> Php
+                <span class="profit">0</span>  
+            </div>
+            <div class="flex">
+                <div class="color-yellow colorBet"></div>
+                <input type="number" class="textBet yellowBet" > 
+            </div>
+            <div class="flex">
+                <div class="color-white colorBet"></div>
+                <input type="text" class="textBet whiteBet"> 
+            </div>
+            <div class="flex">
+                <div class="color-pink colorBet"></div>
+                <input type="text" class="textBet pinkBet"> 
+            </div>
+            <div class="flex">
+                <div class="color-green colorBet"></div>
+                <input type="text" class="textBet greenBet"> 
+            </div>
+            <div class="flex">
+                <div class="color-red colorBet"></div>
+                <input type="text" class="textBet redBet"> 
+            </div>
+            <div class="flex">
+                <div class="color-blue colorBet"></div>
+                <input type="text" class="textBet blueBet"> 
+            </div>
+        </form>
+
+        <!-- Player 6 UI -->
+        <form class="playerForm" id="player6">
+            <div>
+                <label for="">Name: </label>
+                <input type="text" id="name6">  
+            </div>
+            <div>
+                <label for="">Profit: </label> Php
+                <span class="profit">0</span>  
+            </div>
+            <div class="flex">
+                <div class="color-yellow colorBet"></div>
+                <input type="number" class="textBet yellowBet" > 
+            </div>
+            <div class="flex">
+                <div class="color-white colorBet"></div>
+                <input type="text" class="textBet whiteBet"> 
+            </div>
+            <div class="flex">
+                <div class="color-pink colorBet"></div>
+                <input type="text" class="textBet pinkBet"> 
+            </div>
+            <div class="flex">
+                <div class="color-green colorBet"></div>
+                <input type="text" class="textBet greenBet"> 
+            </div>
+            <div class="flex">
+                <div class="color-red colorBet"></div>
+                <input type="text" class="textBet redBet"> 
+            </div>
+            <div class="flex">
+                <div class="color-blue colorBet"></div>
+                <input type="text" class="textBet blueBet"> 
+            </div>
+        </form>
+
+        <!-- Player 7 UI -->
+        <form class="playerForm" id="player7">
+            <div>
+                <label for="">Name: </label>
+                <input type="text" id="name7">  
+            </div>
+            <div>
+                <label for="">Profit: </label> Php
+                <span class="profit">0</span>  
+            </div>
+            <div class="flex">
+                <div class="color-yellow colorBet"></div>
+                <input type="number" class="textBet yellowBet" > 
+            </div>
+            <div class="flex">
+                <div class="color-white colorBet"></div>
+                <input type="text" class="textBet whiteBet"> 
+            </div>
+            <div class="flex">
+                <div class="color-pink colorBet"></div>
+                <input type="text" class="textBet pinkBet"> 
+            </div>
+            <div class="flex">
+                <div class="color-green colorBet"></div>
+                <input type="text" class="textBet greenBet"> 
+            </div>
+            <div class="flex">
+                <div class="color-red colorBet"></div>
+                <input type="text" class="textBet redBet"> 
+            </div>
+            <div class="flex">
+                <div class="color-blue colorBet"></div>
+                <input type="text" class="textBet blueBet"> 
+            </div>
+        </form>
+
+        <!-- Player 8 UI -->
+        <form class="playerForm" id="player8">
+            <div>
+                <label for="">Name: </label>
+                <input type="text" id="name8">  
+            </div>
+            <div>
+                <label for="">Profit: </label> Php
+                <span class="profit">0</span>  
+            </div>
+            <div class="flex">
+                <div class="color-yellow colorBet"></div>
+                <input type="number" class="textBet yellowBet" > 
+            </div>
+            <div class="flex">
+                <div class="color-white colorBet"></div>
+                <input type="text" class="textBet whiteBet"> 
+            </div>
+            <div class="flex">
+                <div class="color-pink colorBet"></div>
+                <input type="text" class="textBet pinkBet"> 
+            </div>
+            <div class="flex">
+                <div class="color-green colorBet"></div>
+                <input type="text" class="textBet greenBet"> 
+            </div>
+            <div class="flex">
+                <div class="color-red colorBet"></div>
+                <input type="text" class="textBet redBet"> 
+            </div>
+            <div class="flex">
+                <div class="color-blue colorBet"></div>
+                <input type="text" class="textBet blueBet"> 
+            </div>
+        </form>
+
+        <!-- Player 9 UI -->
+        <form class="playerForm" id="player9">
+            <div>
+                <label for="">Name: </label>
+                <input type="text" id="name9">  
+            </div>
+            <div>
+                <label for="">Profit: </label> Php
+                <span class="profit">0</span>  
+            </div>
+            <div class="flex">
+                <div class="color-yellow colorBet"></div>
+                <input type="number" class="textBet yellowBet" > 
+            </div>
+            <div class="flex">
+                <div class="color-white colorBet"></div>
+                <input type="text" class="textBet whiteBet"> 
+            </div>
+            <div class="flex">
+                <div class="color-pink colorBet"></div>
+                <input type="text" class="textBet pinkBet"> 
+            </div>
+            <div class="flex">
+                <div class="color-green colorBet"></div>
+                <input type="text" class="textBet greenBet"> 
+            </div>
+            <div class="flex">
+                <div class="color-red colorBet"></div>
+                <input type="text" class="textBet redBet"> 
+            </div>
+            <div class="flex">
+                <div class="color-blue colorBet"></div>
+                <input type="text" class="textBet blueBet"> 
+            </div>
+        </form>
+
+        <!-- Player 10 UI -->
+        <form class="playerForm" id="player10">
+            <div>
+                <label for="">Name: </label>
+                <input type="text" id="name10">  
+            </div>
+            <div>
+                <label for="">Profit: </label> Php
+                <span class="profit">0</span>  
+            </div>
+            <div class="flex">
+                <div class="color-yellow colorBet"></div>
+                <input type="number" class="textBet yellowBet" > 
+            </div>
+            <div class="flex">
+                <div class="color-white colorBet"></div>
+                <input type="text" class="textBet whiteBet"> 
+            </div>
+            <div class="flex">
+                <div class="color-pink colorBet"></div>
+                <input type="text" class="textBet pinkBet"> 
+            </div>
+            <div class="flex">
+                <div class="color-green colorBet"></div>
+                <input type="text" class="textBet greenBet"> 
+            </div>
+            <div class="flex">
+                <div class="color-red colorBet"></div>
+                <input type="text" class="textBet redBet"> 
+            </div>
+            <div class="flex">
+                <div class="color-blue colorBet"></div>
+                <input type="text" class="textBet blueBet"> 
+            </div>
+        </form>
+    <script src="script/js.js"></script>
+</body>
+</html>
