@@ -107,16 +107,78 @@ function submitBet() {
     yBetP9 = +document.querySelector("#player9 .yellowBet").value;
     yBetP10 = +document.querySelector("#player10 .yellowBet").value;
 
-    document.querySelector("#player1 .color-yellow").textContent = yBetP1;
-    document.querySelector("#player2 .color-yellow").textContent = yBetP2;
-    document.querySelector("#player3 .color-yellow").textContent = yBetP3;
-    document.querySelector("#player4 .color-yellow").textContent = yBetP4;
-    document.querySelector("#player5 .color-yellow").textContent = yBetP5;
-    document.querySelector("#player6 .color-yellow").textContent = yBetP6;
-    document.querySelector("#player7 .color-yellow").textContent = yBetP7;
-    document.querySelector("#player8 .color-yellow").textContent = yBetP8;
-    document.querySelector("#player9 .color-yellow").textContent = yBetP9;
-    document.querySelector("#player10 .color-yellow").textContent = yBetP10;
+    /* this statement makes the yellow bets with negative value to 0,
+    otherwise submit the value as it is*/
+    if (yBetP1 <=0) {
+        yBetP1 = 0
+        document.querySelector("#player1 .color-yellow").textContent = 0;
+    } else {
+        document.querySelector("#player1 .color-yellow").textContent = yBetP1;
+    }
+
+    if (yBetP2 <=0) {
+        yBetP2 = 0
+        document.querySelector("#player2 .color-yellow").textContent = 0;
+    } else {
+        document.querySelector("#player2 .color-yellow").textContent = yBetP2;
+    }
+
+    if (yBetP3 <=0) {
+        yBetP3 = 0
+        document.querySelector("#player3 .color-yellow").textContent = 0;
+    } else {
+        document.querySelector("#player3 .color-yellow").textContent = yBetP3;
+    }
+
+    if (yBetP4 <=0) {
+        yBetP4 = 0
+        document.querySelector("#player4 .color-yellow").textContent = 0;
+    } else {
+        document.querySelector("#player4 .color-yellow").textContent = yBetP4;
+    }
+
+    if (yBetP5 <=0) {
+        yBetP5 = 0
+        document.querySelector("#player5 .color-yellow").textContent = 0;
+    } else {
+        document.querySelector("#player5 .color-yellow").textContent = yBetP5;
+    }
+
+    if (yBetP6 <=0) {
+        yBetP6 = 0
+        document.querySelector("#player6 .color-yellow").textContent = 0;
+    } else {
+        document.querySelector("#player6 .color-yellow").textContent = yBetP6;
+    }
+
+    if (yBetP7 <=0) {
+        yBetP7 = 0
+        document.querySelector("#player7 .color-yellow").textContent = 0;
+    } else {
+        document.querySelector("#player7 .color-yellow").textContent = yBetP7;
+    }
+
+    if (yBetP8 <=0) {
+        yBetP8 = 0
+        document.querySelector("#player8 .color-yellow").textContent = 0;
+    } else {
+        document.querySelector("#player8 .color-yellow").textContent = yBetP8;
+    }
+
+    if (yBetP9 <=0) {
+        yBetP9 = 0
+        document.querySelector("#player9 .color-yellow").textContent = 0;
+    } else {
+        document.querySelector("#player9 .color-yellow").textContent = yBetP9;
+    }
+
+    if (yBetP10 <=0) {
+        yBetP10 = 0
+        document.querySelector("#player10 .color-yellow").textContent = 0;
+    } else {
+        document.querySelector("#player10 .color-yellow").textContent = yBetP10;
+    }
+
 
     /* submit bets for white color */
     wBetP1 = +document.querySelector("#player1 .whiteBet").value;
@@ -130,16 +192,78 @@ function submitBet() {
     wBetP9 = +document.querySelector("#player9 .whiteBet").value;
     wBetP10 = +document.querySelector("#player10 .whiteBet").value;
 
-    document.querySelector("#player1 .color-white").textContent = wBetP1;
-    document.querySelector("#player2 .color-white").textContent = wBetP2;
-    document.querySelector("#player3 .color-white").textContent = wBetP3;
-    document.querySelector("#player4 .color-white").textContent = wBetP4;
-    document.querySelector("#player5 .color-white").textContent = wBetP5;
-    document.querySelector("#player6 .color-white").textContent = wBetP6;
-    document.querySelector("#player7 .color-white").textContent = wBetP7;
-    document.querySelector("#player8 .color-white").textContent = wBetP8;
-    document.querySelector("#player9 .color-white").textContent = wBetP9;
-    document.querySelector("#player10 .color-white").textContent = wBetP10;
+    /* this statement makes the white bets with negative value to 0,
+    otherwise submit the value as it is*/
+    if (wBetP1 <=0) {
+        wBetP1 = 0
+        document.querySelector("#player1 .color-white").textContent = 0;
+    } else {
+        document.querySelector("#player1 .color-white").textContent = wBetP1;
+    }
+    
+    if (wBetP2 <=0) {
+        wBetP2 = 0
+        document.querySelector("#player2 .color-white").textContent = 0;
+    } else {
+        document.querySelector("#player2 .color-white").textContent = wBetP2;
+    }
+
+    if (wBetP3 <=0) {
+        wBetP3 = 0
+        document.querySelector("#player3 .color-white").textContent = 0;
+    } else {
+        document.querySelector("#player3 .color-white").textContent = wBetP3;
+    }
+
+    if (wBetP4 <=0) {
+        wBetP4 = 0
+        document.querySelector("#player4 .color-white").textContent = 0;
+    } else {
+        document.querySelector("#player4 .color-white").textContent = wBetP4;
+    }
+
+    if (wBetP5 <=0) {
+        wBetP5 = 0
+        document.querySelector("#player5 .color-white").textContent = 0;
+    } else {
+        document.querySelector("#player5 .color-white").textContent = wBetP5;
+    }
+
+    if (wBetP6 <=0) {
+        wBetP6 = 0
+        document.querySelector("#player6 .color-white").textContent = 0;
+    } else {
+        document.querySelector("#player6 .color-white").textContent = wBetP6;
+    }
+
+    if (wBetP7 <=0) {
+        wBetP7 = 0
+        document.querySelector("#player7 .color-white").textContent = 0;
+    } else {
+        document.querySelector("#player7 .color-white").textContent = wBetP7;
+    }
+
+    if (wBetP8 <=0) {
+        wBetP8 = 0
+        document.querySelector("#player8 .color-white").textContent = 0;
+    } else {
+        document.querySelector("#player8 .color-white").textContent = wBetP8;
+    }
+
+    if (wBetP9 <=0) {
+        wBetP9 = 0
+        document.querySelector("#player9 .color-white").textContent = 0;
+    } else {
+        document.querySelector("#player9 .color-white").textContent = wBetP9;
+    }
+
+    if (wBetP10 <=0) {
+        wBetP10 = 0
+        document.querySelector("#player10 .color-white").textContent = 0;
+    } else {
+        document.querySelector("#player10 .color-white").textContent = wBetP10;
+    }
+
     
     /* submit bets for pink color */
     pBetP1 = +document.querySelector("#player1 .pinkBet").value;
@@ -153,16 +277,78 @@ function submitBet() {
     pBetP9 = +document.querySelector("#player9 .pinkBet").value;
     pBetP10 = +document.querySelector("#player10 .pinkBet").value;
 
-    document.querySelector("#player1 .color-pink").textContent = pBetP1;
-    document.querySelector("#player2 .color-pink").textContent = pBetP2;
-    document.querySelector("#player3 .color-pink").textContent = pBetP3;
-    document.querySelector("#player4 .color-pink").textContent = pBetP4;
-    document.querySelector("#player5 .color-pink").textContent = pBetP5;
-    document.querySelector("#player6 .color-pink").textContent = pBetP6;
-    document.querySelector("#player7 .color-pink").textContent = pBetP7;
-    document.querySelector("#player8 .color-pink").textContent = pBetP8;
-    document.querySelector("#player9 .color-pink").textContent = pBetP9;
-    document.querySelector("#player10 .color-pink").textContent = pBetP10;
+    /* this statement makes the pink bets with negative value to 0,
+    otherwise submit the value as it is*/
+    if (pBetP1 <=0) {
+        pBetP1 = 0
+        document.querySelector("#player1 .color-pink").textContent = 0;
+    } else {
+        document.querySelector("#player1 .color-pink").textContent = wBetP1;
+    }
+
+    if (pBetP2 <=0) {
+        pBetP2 = 0
+        document.querySelector("#player2 .color-pink").textContent = 0;
+    } else {
+        document.querySelector("#player2 .color-pink").textContent = pBetP2;
+    }
+
+    if (pBetP3 <=0) {
+        pBetP3 = 0
+        document.querySelector("#player3 .color-pink").textContent = 0;
+    } else {
+        document.querySelector("#player3 .color-pink").textContent = pBetP3;
+    }
+
+    if (pBetP4 <=0) {
+        pBetP4 = 0
+        document.querySelector("#player4 .color-pink").textContent = 0;
+    } else {
+        document.querySelector("#player4 .color-pink").textContent = pBetP4;
+    }
+
+    if (pBetP5 <=0) {
+        pBetP5 = 0
+        document.querySelector("#player5 .color-pink").textContent = 0;
+    } else {
+        document.querySelector("#player5 .color-pink").textContent = pBetP5;
+    }
+
+    if (pBetP6 <=0) {
+        pBetP6 = 0
+        document.querySelector("#player6 .color-pink").textContent = 0;
+    } else {
+        document.querySelector("#player6 .color-pink").textContent = pBetP6;
+    }
+
+    if (pBetP7 <=0) {
+        pBetP7 = 0
+        document.querySelector("#player7 .color-pink").textContent = 0;
+    } else {
+        document.querySelector("#player7 .color-pink").textContent = pBetP7;
+    }
+
+    if (pBetP8 <=0) {
+        pBetP8 = 0
+        document.querySelector("#player8 .color-pink").textContent = 0;
+    } else {
+        document.querySelector("#player8 .color-pink").textContent = pBetP8;
+    }
+
+    if (pBetP9 <=0) {
+        pBetP9 = 0
+        document.querySelector("#player9 .color-pink").textContent = 0;
+    } else {
+        document.querySelector("#player9 .color-pink").textContent = pBetP9;
+    }
+
+    if (pBetP10 <=0) {
+        pBetP10 = 0
+        document.querySelector("#player10 .color-pink").textContent = 0;
+    } else {
+        document.querySelector("#player10 .color-pink").textContent = pBetP10;
+    }
+
 
     /* submit bets for green color */
     gBetP1 = +document.querySelector("#player1 .greenBet").value;
@@ -176,16 +362,77 @@ function submitBet() {
     gBetP9 = +document.querySelector("#player9 .greenBet").value;
     gBetP10 = +document.querySelector("#player10 .greenBet").value;
 
-    document.querySelector("#player1 .color-green").textContent = gBetP1;
-    document.querySelector("#player2 .color-green").textContent = gBetP2;
-    document.querySelector("#player3 .color-green").textContent = gBetP3;
-    document.querySelector("#player4 .color-green").textContent = gBetP4;
-    document.querySelector("#player5 .color-green").textContent = gBetP5;
-    document.querySelector("#player6 .color-green").textContent = gBetP6;
-    document.querySelector("#player7 .color-green").textContent = gBetP7;
-    document.querySelector("#player8 .color-green").textContent = gBetP8;
-    document.querySelector("#player9 .color-green").textContent = gBetP9;
-    document.querySelector("#player10 .color-green").textContent = gBetP10;
+    /* this statement makes the green bets with negative value to 0,
+    otherwise submit the value as it is*/
+    if (gBetP1 <=0) {
+        gBetP1 = 0
+        document.querySelector("#player1 .color-green").textContent = 0;
+    } else {
+        document.querySelector("#player1 .color-green").textContent = gBetP1;
+    }
+
+    if (gBetP2 <=0) {
+        gBetP2 = 0
+        document.querySelector("#player2 .color-green").textContent = 0;
+    } else {
+        document.querySelector("#player2 .color-green").textContent = gBetP2;
+    }
+
+    if (gBetP3 <=0) {
+        gBetP3 = 0
+        document.querySelector("#player3 .color-green").textContent = 0;
+    } else {
+        document.querySelector("#player3 .color-green").textContent = gBetP3;
+    }
+
+    if (gBetP4 <=0) {
+        gBetP4 = 0
+        document.querySelector("#player4 .color-green").textContent = 0;
+    } else {
+        document.querySelector("#player4 .color-green").textContent = gBetP4;
+    }
+
+    if (gBetP5 <=0) {
+        gBetP5 = 0
+        document.querySelector("#player5 .color-green").textContent = 0;
+    } else {
+        document.querySelector("#player5 .color-green").textContent = gBetP5;
+    }
+
+    if (gBetP6 <=0) {
+        gBetP6 = 0
+        document.querySelector("#player6 .color-green").textContent = 0;
+    } else {
+        document.querySelector("#player6 .color-green").textContent = gBetP6;
+    }
+
+    if (gBetP7 <=0) {
+        gBetP7 = 0
+        document.querySelector("#player7 .color-green").textContent = 0;
+    } else {
+        document.querySelector("#player7 .color-green").textContent = gBetP7;
+    }
+
+    if (gBetP8 <=0) {
+        gBetP8 = 0
+        document.querySelector("#player8 .color-green").textContent = 0;
+    } else {
+        document.querySelector("#player8 .color-green").textContent = gBetP8;
+    }
+
+    if (gBetP9 <=0) {
+        gBetP9 = 0
+        document.querySelector("#player9 .color-green").textContent = 0;
+    } else {
+        document.querySelector("#player9 .color-green").textContent = gBetP9;
+    }
+
+    if (gBetP10 <=0) {
+        gBetP10 = 0
+        document.querySelector("#player10 .color-green").textContent = 0;
+    } else {
+        document.querySelector("#player10 .color-green").textContent = gBetP10;
+    }
 
     /* submit bets for red color */
     rBetP1 = +document.querySelector("#player1 .redBet").value;
@@ -198,17 +445,78 @@ function submitBet() {
     rBetP8 = +document.querySelector("#player8 .redBet").value;
     rBetP9 = +document.querySelector("#player9 .redBet").value;
     rBetP10 = +document.querySelector("#player10 .redBet").value;
-
-    document.querySelector("#player1 .color-red").textContent = rBetP1;
-    document.querySelector("#player2 .color-red").textContent = rBetP2;
-    document.querySelector("#player3 .color-red").textContent = rBetP3;
-    document.querySelector("#player4 .color-red").textContent = rBetP4;
-    document.querySelector("#player5 .color-red").textContent = rBetP5;
-    document.querySelector("#player6 .color-red").textContent = rBetP6;
-    document.querySelector("#player7 .color-red").textContent = rBetP7;
-    document.querySelector("#player8 .color-red").textContent = rBetP8;
-    document.querySelector("#player9 .color-red").textContent = rBetP9;
-    document.querySelector("#player10 .color-red").textContent = rBetP10;
+    
+    /* this statement makes the red bets with negative value to 0,
+    otherwise submit the value as it is*/
+    if (rBetP1 <=0) {
+        rBetP1 = 0
+        document.querySelector("#player1 .color-red").textContent = 0;
+    } else {
+        document.querySelector("#player1 .color-red").textContent = rBetP1;
+    }
+    
+    if (rBetP2 <=0) {
+        rBetP2 = 0
+        document.querySelector("#player2 .color-red").textContent = 0;
+    } else {
+        document.querySelector("#player2 .color-red").textContent = rBetP2;
+    }
+    
+    if (rBetP3 <=0) {
+        rBetP3 = 0
+        document.querySelector("#player3 .color-red").textContent = 0;
+    } else {
+        document.querySelector("#player3 .color-red").textContent = rBetP3;
+    }
+    
+    if (rBetP4 <=0) {
+        rBetP4 = 0
+        document.querySelector("#player4 .color-red").textContent = 0;
+    } else {
+        document.querySelector("#player4 .color-red").textContent = rBetP4;
+    }
+    
+    if (rBetP5 <=0) {
+        rBetP5 = 0
+        document.querySelector("#player5 .color-red").textContent = 0;
+    } else {
+        document.querySelector("#player5 .color-red").textContent = rBetP5;
+    }
+    
+    if (rBetP6 <=0) {
+        rBetP6 = 0
+        document.querySelector("#player6 .color-red").textContent = 0;
+    } else {
+        document.querySelector("#player6 .color-red").textContent = rBetP6;
+    }
+    
+    if (rBetP7 <=0) {
+        rBetP7 = 0
+        document.querySelector("#player7 .color-red").textContent = 0;
+    } else {
+        document.querySelector("#player7 .color-red").textContent = rBetP7;
+    }
+    
+    if (rBetP8 <=0) {
+        rBetP8 = 0
+        document.querySelector("#player8 .color-red").textContent = 0;
+    } else {
+        document.querySelector("#player8 .color-red").textContent = rBetP8;
+    }
+    
+    if (rBetP9 <=0) {
+        rBetP9 = 0
+        document.querySelector("#player9 .color-red").textContent = 0;
+    } else {
+        document.querySelector("#player9 .color-red").textContent = rBetP9;
+    }
+    
+    if (rBetP10 <=0) {
+        rBetP10 = 0
+        document.querySelector("#player10 .color-red").textContent = 0;
+    } else {
+        document.querySelector("#player10 .color-red").textContent = rBetP10;
+    }
 
     /* submit bets for blue color */
     bBetP1 = +document.querySelector("#player1 .blueBet").value;
@@ -221,19 +529,81 @@ function submitBet() {
     bBetP8 = +document.querySelector("#player8 .blueBet").value;
     bBetP9 = +document.querySelector("#player9 .blueBet").value;
     bBetP10 = +document.querySelector("#player10 .blueBet").value;
-
-    document.querySelector("#player1 .color-blue").textContent = bBetP1;
-    document.querySelector("#player2 .color-blue").textContent = bBetP2;
-    document.querySelector("#player3 .color-blue").textContent = bBetP3;
-    document.querySelector("#player4 .color-blue").textContent = bBetP4;
-    document.querySelector("#player5 .color-blue").textContent = bBetP5;
-    document.querySelector("#player6 .color-blue").textContent = bBetP6;
-    document.querySelector("#player7 .color-blue").textContent = bBetP7;
-    document.querySelector("#player8 .color-blue").textContent = bBetP8;
-    document.querySelector("#player9 .color-blue").textContent = bBetP9;
-    document.querySelector("#player10 .color-blue").textContent = bBetP10;
+    
+    /* this statement makes the blue bets with negative value to 0,
+    otherwise submit the value as it is*/
+    if (bBetP1 <=0) {
+        bBetP1 = 0
+        document.querySelector("#player1 .color-blue").textContent = 0;
+    } else {
+        document.querySelector("#player1 .color-blue").textContent = bBetP1;
+    }
+    
+    if (bBetP2 <=0) {
+        bBetP2 = 0
+        document.querySelector("#player2 .color-blue").textContent = 0;
+    } else {
+        document.querySelector("#player2 .color-blue").textContent = bBetP2;
+    }
+    
+    if (bBetP3 <=0) {
+        bBetP3 = 0
+        document.querySelector("#player3 .color-blue").textContent = 0;
+    } else {
+        document.querySelector("#player3 .color-blue").textContent = bBetP3;
+    }
+    
+    if (bBetP4 <=0) {
+        bBetP4 = 0
+        document.querySelector("#player4 .color-blue").textContent = 0;
+    } else {
+        document.querySelector("#player4 .color-blue").textContent = bBetP4;
+    }
+    
+    if (bBetP5 <=0) {
+        bBetP5 = 0
+        document.querySelector("#player5 .color-blue").textContent = 0;
+    } else {
+        document.querySelector("#player5 .color-blue").textContent = bBetP5;
+    }
+    
+    if (bBetP6 <=0) {
+        bBetP6 = 0
+        document.querySelector("#player6 .color-blue").textContent = 0;
+    } else {
+        document.querySelector("#player6 .color-blue").textContent = bBetP6;
+    }
+    
+    if (bBetP7 <=0) {
+        bBetP7 = 0
+        document.querySelector("#player7 .color-blue").textContent = 0;
+    } else {
+        document.querySelector("#player7 .color-blue").textContent = bBetP7;
+    }
+    
+    if (bBetP8 <=0) {
+        bBetP8 = 0
+        document.querySelector("#player8 .color-blue").textContent = 0;
+    } else {
+        document.querySelector("#player8 .color-blue").textContent = bBetP8;
+    }
+    
+    if (bBetP9 <=0) {
+        bBetP9 = 0
+        document.querySelector("#player9 .color-blue").textContent = 0;
+    } else {
+        document.querySelector("#player9 .color-blue").textContent = bBetP9;
+    }
+    
+    if (bBetP10 <=0) {
+        bBetP10 = 0
+        document.querySelector("#player10 .color-blue").textContent = 0;
+    } else {
+        document.querySelector("#player10 .color-blue").textContent = bBetP10;
+    }
 }
 
+/* This function generates random color for the dice */
 function diceRolling(){
     colorRolled1 = diceColors[ Math.floor( Math.random() * diceColors.length ) ];
     colorRolled2 = diceColors[ Math.floor( Math.random() * diceColors.length ) ];
@@ -623,7 +993,6 @@ function debtNotif(){
 }
 
 /* Resets input for bets */
-// Trying to find a way to make this code shorter
 function emptyFields() {
     document.querySelector("#player1 .yellowBet").value = "";
     document.querySelector("#player2 .yellowBet").value = "";
@@ -711,3 +1080,21 @@ rollDice.addEventListener('click', function() {
         emptyFields();
     }
 });
+
+/* const for the game instruction button and modal */
+const modal = document.querySelector(".modal");
+const instButton = document.querySelector(".inst-button");
+const closeButton = document.querySelector(".close-button");
+
+function toggleModal() {
+    modal.classList.toggle("show-modal");
+}
+function windowOnClick(event) {
+    if (event.target === modal) {
+        toggleModal();
+    }
+}
+
+instButton.addEventListener("click", toggleModal);
+closeButton.addEventListener("click", toggleModal);
+window.addEventListener("click", windowOnClick);

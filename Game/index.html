@@ -10,11 +10,10 @@
 
 </head>
 <body>
-    <video autoplay muted loop id="myVideo">
-        <source src="assets/background.mp4" type="video/mp4">
-      </video>
+    <img src="assets/Green Background.jpg" id="mainBackground" alt="greenBackground">
 
     <div id="diceContainer">
+        
         <div class="logo">
             <h1 id="title">COLOR</h1>
             <h1>GAME </h1>
@@ -23,7 +22,26 @@
         <div id="color1" class="dice"></div>
         <div id="color2"class="dice"></div>
         <div id="color3"class="dice"></div>
-        <button id="roll">Roll</button>
+
+        <div id="buttons">
+            <button class="inst-button">Game Instructions</button>
+            <button id="roll">Roll</button>
+            
+            <div class="modal">
+                <div class="modal-content">
+                    <span class="close-button">&times;</span>
+                    <h2>Game Instructions</h2>
+                    <br>
+                    <p>Place your bets on the desired color.</p>
+                    <br>
+                    <p> Win - the profit will be received is the bet amount multiplied by the number of the same rolled color.</p>
+                    <br>
+                    <p>Lose - if rolled color is not the same with the betted color, you will lose your bet amount.</p>
+                    <br>
+                    <p>You can bet on multiple colors. Good luck!</p>
+                </div>
+            </div>
+        </div>
         <div id="hostUI">
             <h2>Host Profit:</h2>
             <span>Php</span>
