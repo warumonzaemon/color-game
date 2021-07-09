@@ -12,17 +12,18 @@
 <body>
     <img src="assets/Green Background.jpg" id="mainBackground" alt="greenBackground">
 
-    <div id="diceContainer">
-        
+    <div id="diceContainer">   
         <div class="logo">
             <h1 id="title">COLOR</h1>
             <h1>GAME </h1>
         </div>
 
+        <!-- Dice -->
         <div id="color1" class="dice"></div>
         <div id="color2"class="dice"></div>
         <div id="color3"class="dice"></div>
 
+        <!-- Buttons for instruction and dice roll -->
         <div id="buttons">
             <button class="inst-button">Game Instructions</button>
             <button id="roll">Roll</button>
@@ -43,25 +44,30 @@
             </div>
         </div>
         <div id="hostUI">
-            <h2>Host Profit:</h2>
-            <span>Php</span>
-            <span id="hostProfit">0</span>
-            <span class="block" id="notif1"></span>
-            <span class="block" id="notif2"></span>
-            <span class="block" id="notif3"></span>
-            <span class="block" id="notif4"></span>
-            <span class="block" id="notif5"></span>
-            <span class="block" id="notif6"></span>
-            <span class="block" id="notif7"></span>
-            <span class="block" id="notif8"></span>
-            <span class="block" id="notif9"></span>
-            <span class="block" id="notif10"></span>
+            <!-- Profit Display -->
+            <div>
+                <h2>Host Profit:</h2>
+                <span>Php</span>
+                <span id="hostProfit">0</span>
+            </div>
+            <!-- Notification display -->            
+            <div>
+                <span class="block" id="notif1"></span>
+                <span class="block" id="notif2"></span>
+                <span class="block" id="notif3"></span>
+                <span class="block" id="notif4"></span>
+                <span class="block" id="notif5"></span>
+                <span class="block" id="notif6"></span>
+                <span class="block" id="notif7"></span>
+                <span class="block" id="notif8"></span>
+                <span class="block" id="notif9"></span>
+                <span class="block" id="notif10"></span>
+            </div>           
+            
         </div>
     </div>
 
-
     <div id="bettingSection">
-
         <!-- Player 1 UI -->
         <form class="playerForm" id="player1">
             <div>
@@ -78,23 +84,23 @@
             </div>
             <div class="flex">
                 <div class="color-white colorBet"></div>
-                <input type="text" class="textBet whiteBet"> 
+                <input type="number" class="textBet whiteBet"> 
             </div>
             <div class="flex">
                 <div class="color-pink colorBet"></div>
-                <input type="text" class="textBet pinkBet"> 
+                <input type="number" class="textBet pinkBet"> 
             </div>
             <div class="flex">
                 <div class="color-green colorBet"></div>
-                <input type="text" class="textBet greenBet"> 
+                <input type="number" class="textBet greenBet"> 
             </div>
             <div class="flex">
                 <div class="color-red colorBet"></div>
-                <input type="text" class="textBet redBet"> 
+                <input type="number" class="textBet redBet"> 
             </div>
             <div class="flex">
                 <div class="color-blue colorBet"></div>
-                <input type="text" class="textBet blueBet"> 
+                <input type="number" class="textBet blueBet"> 
             </div>
         </form>
       
@@ -114,23 +120,23 @@
             </div>
             <div class="flex">
                 <div class="color-white colorBet"></div>
-                <input type="text" class="textBet whiteBet"> 
+                <input type="number" class="textBet whiteBet"> 
             </div>
             <div class="flex">
                 <div class="color-pink colorBet"></div>
-                <input type="text" class="textBet pinkBet"> 
+                <input type="number" class="textBet pinkBet"> 
             </div>
             <div class="flex">
                 <div class="color-green colorBet"></div>
-                <input type="text" class="textBet greenBet"> 
+                <input type="number" class="textBet greenBet"> 
             </div>
             <div class="flex">
                 <div class="color-red colorBet"></div>
-                <input type="text" class="textBet redBet"> 
+                <input type="number" class="textBet redBet"> 
             </div>
             <div class="flex">
                 <div class="color-blue colorBet"></div>
-                <input type="text" class="textBet blueBet"> 
+                <input type="number" class="textBet blueBet"> 
             </div>
         </form>
 
@@ -150,23 +156,23 @@
             </div>
             <div class="flex">
                 <div class="color-white colorBet"></div>
-                <input type="text" class="textBet whiteBet"> 
+                <input type="number" class="textBet whiteBet"> 
             </div>
             <div class="flex">
                 <div class="color-pink colorBet"></div>
-                <input type="text" class="textBet pinkBet"> 
+                <input type="number" class="textBet pinkBet"> 
             </div>
             <div class="flex">
                 <div class="color-green colorBet"></div>
-                <input type="text" class="textBet greenBet"> 
+                <input type="number" class="textBet greenBet"> 
             </div>
             <div class="flex">
                 <div class="color-red colorBet"></div>
-                <input type="text" class="textBet redBet"> 
+                <input type="number" class="textBet redBet"> 
             </div>
             <div class="flex">
                 <div class="color-blue colorBet"></div>
-                <input type="text" class="textBet blueBet"> 
+                <input type="number" class="textBet blueBet"> 
             </div>
         </form>
 
@@ -186,23 +192,23 @@
             </div>
             <div class="flex">
                 <div class="color-white colorBet"></div>
-                <input type="text" class="textBet whiteBet"> 
+                <input type="number" class="textBet whiteBet"> 
             </div>
             <div class="flex">
                 <div class="color-pink colorBet"></div>
-                <input type="text" class="textBet pinkBet"> 
+                <input type="number" class="textBet pinkBet"> 
             </div>
             <div class="flex">
                 <div class="color-green colorBet"></div>
-                <input type="text" class="textBet greenBet"> 
+                <input type="number" class="textBet greenBet"> 
             </div>
             <div class="flex">
                 <div class="color-red colorBet"></div>
-                <input type="text" class="textBet redBet"> 
+                <input type="number" class="textBet redBet"> 
             </div>
             <div class="flex">
                 <div class="color-blue colorBet"></div>
-                <input type="text" class="textBet blueBet"> 
+                <input type="number" class="textBet blueBet"> 
             </div>
         </form>
 
@@ -222,23 +228,23 @@
             </div>
             <div class="flex">
                 <div class="color-white colorBet"></div>
-                <input type="text" class="textBet whiteBet"> 
+                <input type="number" class="textBet whiteBet"> 
             </div>
             <div class="flex">
                 <div class="color-pink colorBet"></div>
-                <input type="text" class="textBet pinkBet"> 
+                <input type="number" class="textBet pinkBet"> 
             </div>
             <div class="flex">
                 <div class="color-green colorBet"></div>
-                <input type="text" class="textBet greenBet"> 
+                <input type="number" class="textBet greenBet"> 
             </div>
             <div class="flex">
                 <div class="color-red colorBet"></div>
-                <input type="text" class="textBet redBet"> 
+                <input type="number" class="textBet redBet"> 
             </div>
             <div class="flex">
                 <div class="color-blue colorBet"></div>
-                <input type="text" class="textBet blueBet"> 
+                <input type="number" class="textBet blueBet"> 
             </div>
         </form>
 
@@ -258,23 +264,23 @@
             </div>
             <div class="flex">
                 <div class="color-white colorBet"></div>
-                <input type="text" class="textBet whiteBet"> 
+                <input type="number" class="textBet whiteBet"> 
             </div>
             <div class="flex">
                 <div class="color-pink colorBet"></div>
-                <input type="text" class="textBet pinkBet"> 
+                <input type="number" class="textBet pinkBet"> 
             </div>
             <div class="flex">
                 <div class="color-green colorBet"></div>
-                <input type="text" class="textBet greenBet"> 
+                <input type="number" class="textBet greenBet"> 
             </div>
             <div class="flex">
                 <div class="color-red colorBet"></div>
-                <input type="text" class="textBet redBet"> 
+                <input type="number" class="textBet redBet"> 
             </div>
             <div class="flex">
                 <div class="color-blue colorBet"></div>
-                <input type="text" class="textBet blueBet"> 
+                <input type="number" class="textBet blueBet"> 
             </div>
         </form>
 
@@ -294,23 +300,23 @@
             </div>
             <div class="flex">
                 <div class="color-white colorBet"></div>
-                <input type="text" class="textBet whiteBet"> 
+                <input type="number" class="textBet whiteBet"> 
             </div>
             <div class="flex">
                 <div class="color-pink colorBet"></div>
-                <input type="text" class="textBet pinkBet"> 
+                <input type="number" class="textBet pinkBet"> 
             </div>
             <div class="flex">
                 <div class="color-green colorBet"></div>
-                <input type="text" class="textBet greenBet"> 
+                <input type="number" class="textBet greenBet"> 
             </div>
             <div class="flex">
                 <div class="color-red colorBet"></div>
-                <input type="text" class="textBet redBet"> 
+                <input type="number" class="textBet redBet"> 
             </div>
             <div class="flex">
                 <div class="color-blue colorBet"></div>
-                <input type="text" class="textBet blueBet"> 
+                <input type="number" class="textBet blueBet"> 
             </div>
         </form>
 
@@ -330,23 +336,23 @@
             </div>
             <div class="flex">
                 <div class="color-white colorBet"></div>
-                <input type="text" class="textBet whiteBet"> 
+                <input type="number" class="textBet whiteBet"> 
             </div>
             <div class="flex">
                 <div class="color-pink colorBet"></div>
-                <input type="text" class="textBet pinkBet"> 
+                <input type="number" class="textBet pinkBet"> 
             </div>
             <div class="flex">
                 <div class="color-green colorBet"></div>
-                <input type="text" class="textBet greenBet"> 
+                <input type="number" class="textBet greenBet"> 
             </div>
             <div class="flex">
                 <div class="color-red colorBet"></div>
-                <input type="text" class="textBet redBet"> 
+                <input type="number" class="textBet redBet"> 
             </div>
             <div class="flex">
                 <div class="color-blue colorBet"></div>
-                <input type="text" class="textBet blueBet"> 
+                <input type="number" class="textBet blueBet"> 
             </div>
         </form>
 
@@ -366,23 +372,23 @@
             </div>
             <div class="flex">
                 <div class="color-white colorBet"></div>
-                <input type="text" class="textBet whiteBet"> 
+                <input type="number" class="textBet whiteBet"> 
             </div>
             <div class="flex">
                 <div class="color-pink colorBet"></div>
-                <input type="text" class="textBet pinkBet"> 
+                <input type="number" class="textBet pinkBet"> 
             </div>
             <div class="flex">
                 <div class="color-green colorBet"></div>
-                <input type="text" class="textBet greenBet"> 
+                <input type="number" class="textBet greenBet"> 
             </div>
             <div class="flex">
                 <div class="color-red colorBet"></div>
-                <input type="text" class="textBet redBet"> 
+                <input type="number" class="textBet redBet"> 
             </div>
             <div class="flex">
                 <div class="color-blue colorBet"></div>
-                <input type="text" class="textBet blueBet"> 
+                <input type="number" class="textBet blueBet"> 
             </div>
         </form>
 
@@ -402,23 +408,23 @@
             </div>
             <div class="flex">
                 <div class="color-white colorBet"></div>
-                <input type="text" class="textBet whiteBet"> 
+                <input type="number" class="textBet whiteBet"> 
             </div>
             <div class="flex">
                 <div class="color-pink colorBet"></div>
-                <input type="text" class="textBet pinkBet"> 
+                <input type="number" class="textBet pinkBet"> 
             </div>
             <div class="flex">
                 <div class="color-green colorBet"></div>
-                <input type="text" class="textBet greenBet"> 
+                <input type="number" class="textBet greenBet"> 
             </div>
             <div class="flex">
                 <div class="color-red colorBet"></div>
-                <input type="text" class="textBet redBet"> 
+                <input type="number" class="textBet redBet"> 
             </div>
             <div class="flex">
                 <div class="color-blue colorBet"></div>
-                <input type="text" class="textBet blueBet"> 
+                <input type="number" class="textBet blueBet"> 
             </div>
         </form>
     <script src="script/js.js"></script>
