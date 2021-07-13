@@ -140,9 +140,7 @@ function resultY(){
     for(var i = 0; i < 3 ; i++){
         if (result[i] == diceColors[0] ){
             countY++;  
-        } else { 
-            countY += 0;
-        }     
+        }  
     }
     console.log(`Yellow count = ${countY}`);
 }
@@ -154,9 +152,7 @@ function resultW(){
     for(var i = 0; i < 3 ; i++){
         if (result[i] == diceColors[1] ){
             countW++;  
-        } else { 
-            countW += 0;
-        }     
+        }  
     }
     console.log(`White count = ${countW}`);
 }
@@ -168,9 +164,7 @@ function resultP(){
     for(var i = 0; i < 3 ; i++){
         if (result[i] == diceColors[2] ){
             countP++;  
-        } else { 
-            countP += 0;
-        }     
+        }   
     }
     console.log(`Pink count = ${countP}`);
 }
@@ -182,9 +176,7 @@ function resultG(){
     for(var i = 0; i < 3 ; i++){
         if (result[i] == diceColors[3] ){
             countG++;  
-        } else { 
-            countG += 0;
-        }     
+        }   
     }
     console.log(`Green count = ${countG}`);
 }
@@ -196,9 +188,7 @@ function resultR(){
     for(var i = 0; i < 3 ; i++){
         if (result[i] == diceColors[4] ){
             countR++;  
-        } else { 
-            countR += 0;
-        }     
+        }    
     }
     console.log(`Red count = ${countR}`);
 }
@@ -210,13 +200,13 @@ function resultB(){
     for(var i = 0; i < 3 ; i++){
         if (result[i] == diceColors[5] ){
             countB++;  
-        } else { 
-            countB += 0;
-        }     
+        }   
     }
     console.log(`Blue count = ${countB}`);
 }
 
+
+    
 /* this function is to calculate the profit of players */
 let playerProfit = new Array(10).fill(0);
 function getProfit(){
@@ -224,6 +214,8 @@ function getProfit(){
     and will accumulate to be added to the total profit later */
     let addProfit = new Array(10).fill(0);
     let addHostProfit = 0;
+    
+
 
     /* counts additional profits or loss for yellow bets */
     if (countY !== 0) {
@@ -348,29 +340,14 @@ function debtNotif(){
 
 /* Resets input for bets */
 function emptyFields() {
-    for ( i = 0; i < 10 ; i++) {
-        document.querySelector(`#player${i+1} .yellowBet`).value = "";
+    let colorBetArray = [".yellowBet", ".whiteBet", ".pinkBet", ".greenBet", ".redBet", ".blueBet"];
+
+    for ( j = 0; j < colorBetArray.length ; j++) {
+        for ( i = 0; i < 10 ; i++) {
+            document.querySelector(`#player${i+1} ${colorBetArray[j]}`).value = "";
+        }
     }
 
-    for ( i = 0; i < 10 ; i++) {
-        document.querySelector(`#player${i+1} .whiteBet`).value = "";
-    }
-
-    for ( i = 0; i < 10 ; i++) {
-        document.querySelector(`#player${i+1} .pinkBet`).value = "";
-    }
-
-    for ( i = 0; i < 10 ; i++) {
-        document.querySelector(`#player${i+1} .greenBet`).value = "";
-    }
-
-    for ( i = 0; i < 10 ; i++) {
-        document.querySelector(`#player${i+1} .redBet`).value = "";
-    }
-
-    for ( i = 0; i < 10 ; i++) {
-        document.querySelector(`#player${i+1} .blueBet`).value = "";
-    }
 }
 
 /* This function generates random colors when the round starts
