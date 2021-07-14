@@ -133,6 +133,24 @@ function getResults() {
     result = [colorRolled1 , colorRolled2 , colorRolled3];   
 }
 
+// /* This function counts the yellow result */
+// let countY = 0;
+// let countW = 0;
+// let countP = 0;
+// let countG = 0;
+// let countR = 0;
+// let countB = 0;
+
+// function countResult(countColor){
+//     countColor = 0
+//     for(var i = 0; i < 3 ; i++){
+//         if (result[i] == diceColors[0] ){
+//             countColor++;  
+//         }  
+//     }
+//     console.log(` ${countColor}`);
+// }
+
 /* This function counts the yellow result */
 var countY = 0;
 function resultY(){
@@ -209,109 +227,28 @@ function resultB(){
     
 /* this function is to calculate the profit of players */
 let playerProfit = new Array(10).fill(0);
-function getProfit(){
+function getProfit(countColor, colorBet){
     /* declares all additional profits, before every round, starts with 0 value 
     and will accumulate to be added to the total profit later */
     let addProfit = new Array(10).fill(0);
     let addHostProfit = 0;
+
+    /* calculates the profit or loss */
+    if (countColor !== 0) {
+            let sum = 0;
+            for (i = 0; i < 10 ; i++) {
+                sum += colorBet[i];
+                addProfit[i] += (countColor * colorBet[i]);
+            }        
+            addHostProfit -= (countColor * sum);
+        } else {
+            let sum = 0;
+            for (i = 0; i < 10 ; i++) {        
+                playerProfit[i] -= colorBet[i];
+                addHostProfit += colorBet[i];
+            }
+        }
     
-
-
-    /* counts additional profits or loss for yellow bets */
-    if (countY !== 0) {
-        let sumY = 0;
-        for (i = 0; i < 10 ; i++) {
-            sumY += yBet[i];
-            addProfit[i] += (countY * yBet[i]);
-        }        
-        addHostProfit -= (countY * sumY);
-    } else {
-        let sumY = 0;
-        for (i = 0; i < 10 ; i++) {        
-            playerProfit[i] -= yBet[i];
-            addHostProfit += yBet[i];
-        }
-    }
-
-    /* counts additional profits or loss for white bets */
-    if (countW !== 0) {
-        let sumW = 0;
-        for (i = 0; i < 10 ; i++) {
-            sumW += wBet[i];
-            addProfit[i] += (countW * wBet[i]);
-        }      
-        addHostProfit -= (countW * sumW);
-    } else {
-        let sumW = 0;
-        for (i = 0; i < 10 ; i++) {        
-            playerProfit[i] -= wBet[i];
-            addHostProfit += wBet[i];
-        }
-    }
-
-    /* counts additional profits or loss for pink bets */
-    if (countP !== 0) {
-        let sumP = 0;
-        for (i = 0; i < 10 ; i++) {
-            sumP += pBet[i];
-            addProfit[i] += (countP * pBet[i]);
-        }      
-        addHostProfit -= (countP * sumP);
-    } else {
-        let sumP = 0;
-        for (i = 0; i < 10 ; i++) {        
-            playerProfit[i] -= pBet[i];
-            addHostProfit += pBet[i];
-        }
-    }
-
-    /* counts additional profits or loss for green bets */
-    if (countG !== 0) {
-        let sumG = 0;
-        for (i = 0; i < 10 ; i++) {
-            sumG += gBet[i];
-            addProfit[i] += (countG * gBet[i]);
-        }      
-        addHostProfit -= (countG * sumG);
-    } else {
-        let sumG = 0;
-        for (i = 0; i < 10 ; i++) {        
-            playerProfit[i] -= gBet[i];
-            addHostProfit += gBet[i];
-        }
-    }
-
-    /* counts additional profits or loss for red bets */
-    if (countR !== 0) {
-        let sumR = 0;
-        for (i = 0; i < 10 ; i++) {
-            sumR += rBet[i];
-            addProfit[i] += (countR * rBet[i]);
-        }      
-        addHostProfit -= (countR * sumR);
-    } else {
-        let sumR = 0;
-        for (i = 0; i < 10 ; i++) {        
-            playerProfit[i] -= rBet[i];
-            addHostProfit += rBet[i];
-        }
-    }
-
-    /* counts additional profits or loss for blue bets */
-    if (countB !== 0) {
-        let sumB = 0;
-        for (i = 0; i < 10 ; i++) {
-            sumB += bBet[i];
-            addProfit[i] += (countB * bBet[i]);
-        }      
-        addHostProfit -= (countB * sumB);
-    } else {
-        let sumB = 0;
-        for (i = 0; i < 10 ; i++) {        
-            playerProfit[i] -= bBet[i];
-            addHostProfit += bBet[i];
-        }
-    }
 
     /* Totals overall profit during the entire game */
     for (i=0;i < 10 ; i++){
@@ -358,13 +295,25 @@ rollDice.addEventListener('click', function() {
         submitBet();
         diceRolling();
         getResults();
+        // countResult(countY);
+        // countResult(countW);
+        // countResult(countP);
+        // countResult(countG);
+        // countResult(countR);
+        // countResult(countB);
+
         resultY();
         resultW();
         resultP();
         resultG();
         resultR();
         resultB();
-        getProfit();
+        getProfit(countY,yBet);
+        getProfit(countW,wBet);
+        getProfit(countP,pBet);
+        getProfit(countG,gBet);
+        getProfit(countR,rBet);
+        getProfit(countB,bBet);
         debtNotif();
         emptyFields();
     }
