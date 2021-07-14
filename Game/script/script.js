@@ -133,24 +133,6 @@ function getResults() {
     result = [colorRolled1 , colorRolled2 , colorRolled3];   
 }
 
-// /* This function counts the yellow result */
-// let countY = 0;
-// let countW = 0;
-// let countP = 0;
-// let countG = 0;
-// let countR = 0;
-// let countB = 0;
-
-// function countResult(countColor){
-//     countColor = 0
-//     for(var i = 0; i < 3 ; i++){
-//         if (result[i] == diceColors[0] ){
-//             countColor++;  
-//         }  
-//     }
-//     console.log(` ${countColor}`);
-// }
-
 /* This function counts the yellow result */
 var countY = 0;
 function resultY(){
@@ -295,13 +277,6 @@ rollDice.addEventListener('click', function() {
         submitBet();
         diceRolling();
         getResults();
-        // countResult(countY);
-        // countResult(countW);
-        // countResult(countP);
-        // countResult(countG);
-        // countResult(countR);
-        // countResult(countB);
-
         resultY();
         resultW();
         resultP();
