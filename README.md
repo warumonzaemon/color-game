@@ -1,23 +1,26 @@
-# Uplift Project 2 - Javascript game
 
-## Title: Color Game
+# Uplift Project 2 - Color Game
 
-## Game Instructions:
+An online gambling game where bets are placed on colors.
+As a kid, I used to come to the fair just to play this game in the hopes of raking some money.
 
-The game operator will be the one to navigate through the app.
+## Authors
 
-1. 	This version of the game is limited to 10 players and an operator. 
-	Operator will type in the names of the players who want to participate.
+- [Jericho Fontiveros @warumonzaemon](https://github.com/warumonzaemon)
 
-2.	Player will ask the operator to place their bets on their desired color.
 
-3.	Once all bets are placed, operator can clickon the roll button and the 
-	script will generate 3 random colors.
+## Acknowledgements
 
-4.	Bets will multiply according to the number of color that their bets are placed 
-	and their bets will also return to them.
+ - [Uplift Code Camp](https://www.upliftcodecamp.com/)
+ - [Joshua Fontiveros](https://joshua-fontiveros-portfolio.herokuapp.com/)
+ - [Ruzzell Fernandez](https://www.linkedin.com/in/ruzzell-fernandez-b09b6b104/)
+ 
 
-	If the color they picked did not appear, they will lose their bet.
+## Feedback
 
-	They can select multiple colors at the same time.
+If you have any feedback, please reach out to me at jerichofontiveros@gmail.com
+
+
+## 🛠 Skills
+ Javascript, HTML, CSS...
 
